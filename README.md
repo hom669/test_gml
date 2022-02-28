@@ -30,5 +30,5 @@ Modelo Entidad Relacion de Base de Datos:
 Pasos para arrancar proyecto administración de usuarios GML:
 
 1. Descargar Poryecto desde GitHub
-  
-3. 
+  git clone https://github.com/hom669/test_gml.git
+2.  
