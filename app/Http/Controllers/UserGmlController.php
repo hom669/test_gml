@@ -101,7 +101,7 @@ class UserGmlController extends Controller
 
         $userAll = userGml::join('categories_gml', 'categories_gml.id_category', '=', 'users_gml.id_category')
             ->where('id_user', '=', $userGml->id_user)->first();
-        //event(new UserRegister($userAll->toArray()));
+        event(new UserRegister($userAll->toArray()));
         $this->eventMailAdmi();
         return Redirect::route('usersgml.index');
     }
